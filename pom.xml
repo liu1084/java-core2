@@ -13,6 +13,9 @@
         <module>logback-test</module>
         <module>absolute</module>
         <module>unittest</module>
+        <module>base</module>
+        <module>ymaltest</module>
+        <module>object-enhance</module>
     </modules>
 
     <properties>

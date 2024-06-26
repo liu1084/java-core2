@@ -7,11 +7,11 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.jim.jvm.logback</groupId>
-    <artifactId>logback-test</artifactId>
+    <groupId>com.jim.web</groupId>
+    <artifactId>ymaltest</artifactId>
     <packaging>jar</packaging>
 
-    <name>logback-test</name>
+    <name>ymaltest</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -25,12 +25,36 @@
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-yaml</artifactId>
+            <version>2.13.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-jsr310</artifactId>
+            <version>2.13.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.32</version>
+        </dependency>
+        <dependency>
+            <groupId>com.jim.web</groupId>
+            <artifactId>object-enhance</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>2.0.12</version>
         </dependency>
-        <!--logback-->
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-core</artifactId>
@@ -41,6 +65,5 @@
             <artifactId>logback-classic</artifactId>
             <version>1.5.3</version>
         </dependency>
-
     </dependencies>
 </project>
